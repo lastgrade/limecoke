@@ -1,0 +1,275 @@
+@charset 'utf-8';
+
+@import 'settings';
+//@import 'app';
+
+
+
+.header{
+	.title-bar{
+		margin: 5px 0px;
+	}
+	.nav-container{
+		//background-color:#f7f7f7;
+		background-color:#d7d7d7;		
+		.menu-bar{
+			padding-top:6px;
+		}
+		
+	}
+	.menu{
+		//display: inline-block;
+		//margin: 0 auto;
+		background-color:#d7d7d7;	
+		li{
+			text-transform: uppercase;
+			a{
+				color: $black;
+				padding: 0.7rem 1.5rem;
+				//font-weight: bold;
+			}
+			ul{
+				li{
+					a{
+						//color: #cecac9;
+						//border-bottom: 1px solid #544d4c;
+						padding: 0.7rem .5rem;
+						text-align: left;							
+					}				
+				}					
+			}
+			
+			
+		}
+	}
+	.top-bar{
+		.top-bar-left{
+			img{
+				display: block;
+			}		
+			h1{
+				display: none;
+			}
+		}
+		.top-bar-right{
+			//width: rem-calc(640);
+			margin-top: 17px;
+		}
+		.contact{
+			float: left;
+			width: rem-calc(220);
+			margin-top:3px;
+			p{
+				img{
+					valign: middle;
+					float: left;
+					width:40px;
+					height:40px;
+					margin-top:2px;
+				}
+				span{
+					display: block;				
+					float: left;
+					margin-left: 3px;
+				}
+			}		
+		}
+		.email{
+			float: left;
+			//width: rem-calc(340);	
+			margin-right: 20px;
+			margin-top:5px;
+			img{
+				width:40px;
+				height:40px;
+			}		
+		}
+		.social{
+			float: right;
+			width: rem-calc(80);						
+			img{
+				width: 37px;
+				height: 37px;
+			}
+			text-align: right;
+		}
+		
+	}
+}
+
+.mid-container{
+	overflow: hidden;
+	
+	.slider-container{		
+		position: relative;
+		left: 50%;
+		margin-left: -760px;
+		width: 1520px;
+		max-width: 1520px;
+		overflow: hidden;
+	}
+	
+} //.mid-container{
+
+.home{
+	margin-top: 1rem;
+		
+	h2, h3, h4, h5{
+		
+		// font-size: rem-calc(22);
+		text-transform: uppercase;
+		small{
+			color: $my-red;	
+		}
+	}
+	p{
+		text-align:justify;
+	}
+	.button{
+		font-size: rem-calc(14);
+		text-transform: uppercase;
+	}
+	
+	.brochure{
+		h4, h5{
+			text-align: center;
+			text-transform: uppercase;
+			font-size: rem-calc(20);
+			color: #0092c9;	
+			small{
+				color: #0092c9;	
+				//font-weight: bold;
+			}
+		}
+	}	
+}
+
+.banner{    
+	overflow: hidden;
+	margin-bottom: rem-calc(16);
+	.inner{
+		position: relative;
+		left: 50%;
+		margin-left: -800px;
+		width: 1600px;
+		max-width: 1600px;
+		overflow: hidden;
+	}
+}
+
+.main{
+	min-height: rem-calc(460);	
+	h2{		
+		color: $my-red;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		border-bottom: 3px solid $medium-gray;
+	}
+	form{
+		max-width: rem-calc(600);
+	}
+	.title-container{
+		position: relative;
+		img{
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}
+
+.footer{
+	.address{
+		background-color: #e5e7e6 ;
+		p{
+			margin-top: 1rem;
+			text-align:center;
+			color: $my-red;
+			//font-family: arial;
+			font-size: rem-calc(15);			
+			text-transform: capitalize;
+		}
+	}
+	.copyrights{
+		color: #fff;
+		background-color: #000;
+	    font-family: "Verdana", Helvetica, Arial,sans-serif;
+		text-align: center;
+	    font-size: rem-calc(9);
+    	//margin-bottom: 8px;
+		padding-top: rem-calc(20);
+		a{
+			color: #fff;
+		}		
+	}
+	
+}//.footer{
+/* small screen */
+@media only screen and (max-width: 768px) {
+	.header{
+		
+		.nav-container{
+			.menu-bar{
+				padding:0;
+			}			
+		}
+		.menu{
+			li{
+				a{
+					text-align: left;
+				}
+			}
+		}
+		
+		.top-bar{
+			.top-bar-left{			
+				width: 100%;	
+				text-align: center;
+				img{
+					margin: 0 auto;
+				}
+			}
+			.top-bar-right{
+				display: none;
+				.contact, .email{
+					display: none;
+				}
+			}
+		}
+	}	
+
+	.mid-container{
+		overflow: hidden;
+		
+		.slider-container{		
+			position: relative;
+			left: 0;
+			margin-left: 0;
+			width: auto;
+			overflow: hidden;			
+			#sliderFrame{
+				display: none;
+			}
+			
+		}
+		
+	} //.mid-container{
+	.banner{
+		overflow: hidden;
+		.inner{
+			left: 0;
+			margin-left: 0;
+			width: auto;			
+		}
+	}
+	.main{
+		.title-container{
+			position: relative;
+			img{
+				//position: relative;
+				//float: right;
+				//top: 0;
+			}
+		}			
+	}//	.main{
+}
