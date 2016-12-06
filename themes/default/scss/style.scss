@@ -86,10 +86,11 @@
 		}
 		.social{
 			float: right;
-			width: rem-calc(80);						
+			width: rem-calc(100);	
+			margin-top:5px;					
 			img{
-				width: 37px;
-				height: 37px;
+				width: 40px;
+				height: 40px;
 			}
 			text-align: right;
 		}
@@ -159,6 +160,8 @@
 
 .main{
 	min-height: rem-calc(460);	
+	margin-bottom: 1rem;
+	
 	h2{		
 		color: $my-red;
 		text-transform: uppercase;
@@ -207,7 +210,7 @@
 /* small screen */
 @media only screen and (max-width: 768px) {
 	.header{
-		
+		margin-bottom:rem-calc(16); 
 		.nav-container{
 			.menu-bar{
 				padding:0;
@@ -240,29 +243,26 @@
 
 	.mid-container{
 		overflow: hidden;
-		
+
 		.slider-container{		
 			position: relative;
-			left: 0;
-			margin-left: 0;
-			width: auto;
-			overflow: hidden;			
-			#sliderFrame{
-				display: none;
-			}
-			
+			left: 50%;
+			margin-left: -385px;
+			width: 770px;
+			max-width: 770px;
+			overflow: hidden;
 		}
 		
+		
 	} //.mid-container{
+		
 	.banner{
-		overflow: hidden;
+		display: none;
 		.inner{
-			left: 0;
-			margin-left: 0;
-			width: auto;			
+			display: none;
 		}
 	}
-	.main{
+	.main{		
 		.title-container{
 			position: relative;
 			img{

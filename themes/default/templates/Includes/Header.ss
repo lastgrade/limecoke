@@ -39,8 +39,7 @@
 						</div>
 						<div class="social">
 							<a href="#"><img src="$ThemeDir/images/fb.png"></a>
-							<a href="#"><img src="$ThemeDir/images/twt.png"></a>
-							<p>follow us</p>
+							<a href="#"><img src="$ThemeDir/images/location.png"></a>							
 						</div>
 					</div>
 				  </div>

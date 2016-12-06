@@ -1,16 +1,6 @@
     <div class="mid-container">    
         <div class="slider-container">
         
-				<%--
-				<div id="sliderFrame">
-					<div id="slider">
-						<% loop $Sliders %>						  
-							<img src="$Photo.URL">              	                
-						<% end_loop %>				
-						
-					</div>					
-				</div>
-				--%>
 				
 				<% if Sliders %>
 				<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
@@ -19,7 +9,7 @@
 					<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 					<% loop $Sliders %>						  
 					<li class="<% if $First %>is-active <% end_if %>orbit-slide">
-					  <img class="orbit-image" src="$Photo.URL" alt="$Photo.FileName">                  
+					  <img class="orbit-image" src="$Photo.URL" alt="$Photo.FileName" data-interchange="[$Photo.SetWidth(770).URL, small], [$Photo.SetWidth(770).URL, medium], [$Photo.URL, large]">					  
 					</li>
 					<% end_loop %>				
 				  </ul>
