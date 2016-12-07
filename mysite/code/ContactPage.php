@@ -6,7 +6,7 @@ class ContactPage extends Page {
   );
   public function getCMSFields(){
     $fields = parent::getCMSFields();
-    $fields->addFieldToTab(  "Root.Main",  new EmailField('Mailto', 'Recipient')      );
+    $fields->addFieldToTab(  "Root.Main",  new TextField('Mailto', 'Recipient')      );
     $fields->addFieldToTab(  "Root.Main",new HTMLEditorField(  'SubmitText',  'Text after sending the message'  )      );
     return $fields;
   }

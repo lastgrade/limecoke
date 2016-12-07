@@ -5,11 +5,11 @@
 		
 			<h3>$Title</h3>		
 			<div class="row">
-				<div class="small-12 large-8 columns">
+				<div class="small-12  medium-8 large-8 columns">
 					$Content
 					$Form
 				</div>
-				<div class="small-12 large-4 large-centered columns">		
+				<div class="small-12   medium-4 large-4 columns">		
 					<img src="$Photo.CroppedImage(350,250).URL" alt="$Photo.Title" class="float-center">
 				</div>			
 			</div>

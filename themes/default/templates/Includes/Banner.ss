@@ -3,7 +3,7 @@
 		<% if $BannerImage %>			
 			<img data-interchange="[$BannerImage.CroppedImage(640,146).URL, small], [$BannerImage.CroppedImage(800,146).URL, medium], [$BannerImage.URL, large]">
 		<% else %>
-			<img src="$ThemeDir/images/inner.jpg">			
+			<img src="$ThemeDir/images/header.jpg">			
 		<% end_if %>
 		</div>
 	</div>	

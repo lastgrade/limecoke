@@ -24,11 +24,11 @@
         </div>
 	
 	<div class="row home">
-	  <div class="small-12 large-3 columns">
+	  <div class="small-12 medium-3 large-3 columns">
 		 <h4><small>$Title</small></h4>
 		  $Content
 	  </div>		
-	  <div class="small-12 large-9 columns"> 				
+	  <div class="small-12  medium-9 large-9 columns"> 				
 		   <div class="row small-up-1 medium-up-3 large-up-3">
 				<% loop LatestProducts %>
 					<div class="column">
